@@ -1045,7 +1045,7 @@ contract OlympusBondDepository is Ownable {
      *  @return uint
      */
     function standardizedDebtRatio() external view returns ( uint ) {
-        return debtRatio().mul( uint( assetPrice() ) ).div( 1e8 ); // ETH feed is 8 decimals
+        return debtRatio().mul( uint( assetPrice() ) ).div( 1e8 ); // BNB feed is 8 decimals
     }
 
     /**
